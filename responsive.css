@@ -1,0 +1,178 @@
+/* (c) Reinhard Höbart 2023 */
+
+@media (max-width: 1600px) {
+   header {
+      height: 220px;
+   }
+   h3:hover::after {
+      font-size: 1.5vw;
+   }
+}
+
+@media (max-width: 1300px) {
+   header {
+      height: 180px;
+   }
+   h1 {
+      transform: translate(13.5vw, 0);
+   }
+   picture {
+      min-height: 30vh;
+      min-width: 40vw;
+   }
+   figure {
+      min-height: 30vh;
+      min-width: 40vw;
+   }
+}
+
+@media (max-width: 1130px) {
+   h3 {
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 2.2vw;
+      padding-right: 2.2vw;
+      padding-top: 4.4vw;
+      transform: translate(5vw, 0px);
+      z-index: 2;
+   }
+   h3::before {
+      font-size: 1.4vw;
+   }
+   h3:hover::after {
+      font-size: 1.8vw;
+   }
+   h1 {
+      transform: translate(18vw, 0);
+   }
+   picture {
+      transform: translate(2vw, 0px);
+   }
+
+}
+
+@media (max-width: 1015px) {
+   h3 {
+      padding-left: 2.5vw;
+      padding-right: 2.5vw;
+      padding-top: 5vw;
+   }
+   h3::before {
+      font-size: 1.6vw;
+   }
+   h3:hover::after {
+      font-size: 2vw;
+   }
+   header {
+      height: 150px;
+   }
+   h1 {
+      font-size: 4vw;
+   }
+}
+
+@media (max-width: 870px) {
+   header {
+      height: 135px;
+   }
+   h1 {
+      font-size: 220%;
+      width: 250vw;
+      transform: translate(-3vw, 0);
+   }
+   picture {
+      display: none;
+   }
+   figure {
+      display: none;
+   }
+   h3 {
+      z-index: 2;
+   }
+   h3:hover::after {
+      font-size: 2.3vw;
+   }
+}
+
+@media (max-width: 715px) {
+   header {
+      height: 125px;
+   }
+   form {
+      min-width: 70vw;
+   }
+   h3 {
+      padding-left: 2.8vw;
+      padding-right: 2.8vw;
+      padding-top: 5.6vw;
+   }
+   h3::before {
+      font-size: 1.8vw;
+   }
+   h3:hover::after {
+      font-size: 2.6vw;
+   }
+}
+
+@media (max-width: 700px) {
+   h2 {
+      min-width: 70vw;
+      font-size: 2.9vw;
+   }
+   h5 {
+      min-width: 70vw;
+      font-size: 2vw;
+   }
+   section {
+      margin-left: 10vw;
+   }
+   
+}
+
+@media (max-width: 550px) {
+   h3 {
+      transform: translate(46vw, 7vh);
+   }
+   h3:hover::after {
+      font-size: 80%;
+      width: 1250%;
+      top: -40%;
+      left: -600%;
+   }
+   section {
+      margin-left: 7vw;
+   }
+}
+
+@media (max-width: 455px) {
+   h1 {
+      font-size: 7.5vw;
+   }
+   h6 {
+      font-size: 2.9vw;
+   }
+   section {
+      margin-left: 5vw;
+   }
+}
+
+@media (max-width: 360px) {
+   header {
+      height: 30vw;
+   }
+   h3 {
+      transform: translate(46vw, 13vw);
+      padding-left: 3.5vw;
+      padding-right: 3.5vw;
+      padding-top: 7vw;
+   }
+   h3::before {
+      font-size: 2.2vw;
+   }
+   #transform-button {
+      font-size: 4.8vw;
+   }
+   #erase-button {
+      font-size: 4.1vw;
+   }
+}

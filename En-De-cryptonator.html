@@ -1,0 +1,68 @@
+<!-- (c) Reinhard Höbart 2023 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Password Transformator</title>
+   <link rel="shortcut icon" href="Drivelink Changer Icon.png" type="image/png">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="responsive.css">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Foldit:wght@600&family=Josefin+Sans:ital,wght@1,600&family=Montserrat:wght@500&family=Teko:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+
+   <script src="userInterface.js" defer></script>
+   <script src="utility.js" defer></script>
+   <script src="checking.js" defer></script>
+   <script src="keyCreator.js" defer></script>
+   <script src="keyPacker.js" defer></script>
+   <script src="keyExtractor.js" defer></script>
+   <script src="keyIndexer.js" defer></script>
+   <script src="encryptor.js" defer></script>
+   <script src="decryptor.js" defer></script>
+</head>
+<body>
+   <header>
+      <h3></h3>
+      <h1>Text En(De)cryptonator</h1>
+      <picture>
+         <figure>
+         </figure>
+      </picture>
+   </header>
+   <main>
+      
+      <form>
+         <h2>Paste your text into this field for encryption<br>
+            (or your already encrypted text for decryption): <br>
+         </h2>
+         <pre>
+            <textarea placeholder=" - Please enter your text here - "></textarea>
+            <h4 id="clear-text">CLEAR</h4>
+         </pre>
+         <h2>For decryption, paste the used encryption key below!</h2>
+         <h5>(if key is not given or not valid, a new key will be generated and shown.)</h5>
+         <fieldset>
+            <input type="text" placeholder="KEY">
+            <h4 id="copy-key">COPY</h4>
+            <h4 id="clear-key">CLEAR</h4>
+         </fieldset>
+         <button type="button" id="transform-button">Transform</button>
+         <h6>Multiple transformations are possible <br>and will be
+            shown in the result-list below.</h6>
+      </form>
+      <hr>
+      <h2>RESULTS:</h2>
+      <pre>
+         <section id="result-collection-grandparent"></section>
+      </pre>
+   </main>
+   <footer>
+      <button type="button" id="erase-button">Erase Result List</button>
+   </footer>
+</body>
+</html>
